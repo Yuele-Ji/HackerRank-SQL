@@ -7,4 +7,4 @@
 </p>
 
 ## Description
-The solutions of all the SQL challenges for all easy, medium and hard challenges on HackerRank executed on MySQL environment.
+The solutions of all the SQL challenges for all easy, medium and hard challenges on [HackerRank](https://www.hackerrank.com/domains/sql) executed on MySQL environment.
