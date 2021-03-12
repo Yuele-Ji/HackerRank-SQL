@@ -6,9 +6,10 @@ FROM OCCUPATIONS
 GROUP BY Occupation
 ORDER BY COUNT(Occupation), LOWER(Occupation);
 
--- SELECT CONCAT(NAME, 
+/* SELECT CONCAT(NAME, 
                  CASE WHEN occupation = "Doctor" THEN "(D)" 
                       WHEN occupation = "Professor" THEN "(P)" 
                       WHEN occupation = "Singer" THEN "(S)" 
                       WHEN occupation = "Actor" THEN "(A)" 
                       END )
+ */
