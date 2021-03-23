@@ -1,0 +1,13 @@
+-- get the min cost for each age(code) and power
+WITH min_cost AS(
+    SELECT code, power, MIN(coins_needed) AS min_coins_needed
+    FROM Wands 
+    GROUP BY code, power)
+SELECT w.id, p.age, m.min_coins_needed, m.power 
+FROM min_cost m
+JOIN Wands w 
+ON m.code = w.code AND m.power = w.power AND m.min_coins_needed = w.coins_needed
+JOIN Wands_Property p 
+ON m.code = p.code
+WHERE p.is_evil = 0
+ORDER BY m.power DESC, age DESC
