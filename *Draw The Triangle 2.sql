@@ -1,4 +1,4 @@
-SET @number = 0;
-SELECT REPEAT('* ', @number := @number+1) 
-FROM information_schema.tables 
-WHERE @number < 20;
+SET @NUMBER = 0;
+SELECT REPEAT('* ', @NUMBER := @NUMBER +1)
+FROM information_schema.tables
+LIMIT 20;
